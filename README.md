@@ -62,4 +62,4 @@ Blender Files Cloud Rendering by using Google Colab GPUs
 * Enter directory of blend file to be rendered  :-  /gdrive/MyDrive/test_render/main.blend
 
 * Locate GPU.py file 			      :-  /gdrive/MyDrive/test_render/GPU.py
-* 
+ 
