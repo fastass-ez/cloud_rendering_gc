@@ -1,5 +1,6 @@
 # Cloud Rendering (Google Colab)
 
+* All files stated can be downloaded as a zip folder
 
 ## How to use
 
