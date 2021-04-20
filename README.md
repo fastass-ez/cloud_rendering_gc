@@ -4,11 +4,11 @@
 
 ## How to use
 
-===> All present GPUs - [K80 < P4 < T4 < P100]  (ascending order in terms of Rendering speed(Slow to Fast))
+===> All present GPUs - [K80 < P4 < T4 < P100]  (ascending order in terms of Rendering speed (Slow to Fast))
 
 1. With your Google account signed in on your Web Browser, Open Google Colab - https://colab.research.google.com/notebooks/intro.ipynb#recent=true  and upload 'cloud_render.ipynb' which is a Jupyter Notebook file format provided.
 
-2. K80 does not support Optix rendering, so check the GPU connected by running the first line of code. U will have to choose the rendering device (CUDA or OPTIX) later so it's better to decide by having a look at the GPU name.
+2. K80 does not support Optix rendering, so check the GPU connected by running the first line of code. You will have to choose the rendering device (CUDA or OPTIX) later so it's better to decide by having a look at the GPU name.
 
 3. Run the second, the main part of the program. Enter the Authorization code as directed. First, you need to input whether you want to provide the Blender location or want the Cloud machine to download the file itself, input 'download' for this or 'install', and then provide the path of the downloaded file on your drive. Go to https://download.blender.org/release/ and click on the version you want to render on. Find the linux64.tar.xz type of that particular version as it won't support any other type. 
 * If you chose the 'download' option, copy both the link of that page and the version + type, then paste it as an input for the directory. It should look like this - https://download.blender.org/release/Blender2.92/blender-2.92.0-linux64.tar.xz 
@@ -32,7 +32,7 @@
 
 12) The file will now start to render, it will show current estimates,  etc. similar to the actual rendering scene in Blender.
 
-13) A File will be automatically created named "Output" in the same directory. All rendered files will be visible if it's completed.
+13) A File will be automatically created named "Output" in the same directory of your Google Drive. All rendered files will be visible if it's completed.
 
 
 
@@ -48,7 +48,7 @@
 
 
 
-## Sample inputs 
+## Sample inputs (your file paths may vary)
 
 (may vary according to file names  and location)
 
