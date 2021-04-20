@@ -10,8 +10,8 @@
 2. K80 does not support Optix rendering, so check the GPU connected by running the first line of code. U will have to choose the rendering device (CUDA or OPTIX) later so it's better to decide by having a look at the GPU name.
 
 3. Run the second, the main part of the program. Enter the Authorization code as directed. First, you need to input whether you want to provide the Blender location or want the Cloud machine to download the file itself, input 'download' for this or 'install', and then provide the path of the downloaded file on your drive. Go to https://download.blender.org/release/ and click on the version you want to render on. Find the linux64.tar.xz type of that particular version as it won't support any other type. 
-** If you chose the 'download' option, copy both the link of that page and the version + type, then paste it as an input for the directory. It should look like this - https://download.blender.org/release/Blender2.92/blender-2.92.0-linux64.tar.xz 
-** If you chose the 'install' option, download the particular version and upload it to your Google Drive. Now, locate that file from the drive. This should look like this - /gdrive/MyDrive/test_render/blender-2.92.0-linux64.tar.xz  | Here, /gdrive/MyDrive/  will be the same for all as its a common path to get into a Google Drive. 'test_render/' is a folder created, and blender-2.92.0-linux64.tar.xz is the name of the file. 
+* If you chose the 'download' option, copy both the link of that page and the version + type, then paste it as an input for the directory. It should look like this - https://download.blender.org/release/Blender2.92/blender-2.92.0-linux64.tar.xz 
+* If you chose the 'install' option, download the particular version and upload it to your Google Drive. Now, locate that file from the drive. This should look like this - /gdrive/MyDrive/test_render/blender-2.92.0-linux64.tar.xz  | Here, /gdrive/MyDrive/  will be the same for all as its a common path to get into a Google Drive. 'test_render/' is a folder created, and blender-2.92.0-linux64.tar.xz is the name of the file. 
 
 4. Next, u need to input the blender version, as shown with an example.
 
