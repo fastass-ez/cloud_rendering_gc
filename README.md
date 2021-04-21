@@ -54,15 +54,15 @@
 
 (may vary according to file names  and location)
 
-* Enter blender version    		        :-  blender-2.92.0-linux64
+* Enter blender version                         :-  blender-2.92.0-linux64
 
-* Enter directory of Blender  (Google Drive)	:-  /gdrive/MyDrive/test_render/blender-2.92.0-linux64.tar.xz
+* Enter directory of Blender  (Google Drive)    :-  /gdrive/MyDrive/test_render/blender-2.92.0-linux64.tar.xz
 
 * Enter Blender Download path link              :-  https://download.blender.org/release/Blender2.92/blender-2.92.0-linux64.tar.xz
 
 * Enter directory of blend file to be rendered  :-  /gdrive/MyDrive/test_render/main.blend
 
-* Locate GPU.py file 			        :-  /gdrive/MyDrive/test_render/GPU.py
+* Locate GPU.py file                            :-  /gdrive/MyDrive/test_render/GPU.py
  
 
 GLHF ;)
