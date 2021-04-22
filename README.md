@@ -50,7 +50,7 @@
 
 
 
-## Sample inputs (your file paths may vary)
+## Sample inputs 
 
 (may vary according to file names  and location)
 
