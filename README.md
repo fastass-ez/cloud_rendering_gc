@@ -44,9 +44,7 @@
 
 2. This only supports Cycles render as of now.
 
-3. If the webpage is closed during the process, it terminates the Jupyter notebook file. To make it run in the background, a smartphone can be used for the same, with the tab left open on background processes.
-
-4. It's better to provide the Blender Application in your drive as this will subtract the time to download it whenever you run the code in the future.
+3. It's better to provide the Blender Application in your drive as this will subtract the time to download it whenever you run the code in the future.
 
 
 
