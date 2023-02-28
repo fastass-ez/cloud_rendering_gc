@@ -1,41 +1,35 @@
 # Blender Cloud Rendering (Google Colab)
 
-* All files stated can be downloaded as a zip folder
 
 ## How to use
 
 ===> All present GPUs - [K80 < P4 < T4 < P100]  (ascending order in terms of Rendering speed (Slow to Fast))
 
-1. With your Google account signed in on your Web Browser, Open Google Colab - https://colab.research.google.com/notebooks/intro.ipynb#recent=true  and upload 'cloud_render.ipynb' which is a Jupyter Notebook file format provided.
+1) With your Google Account signed in, open Google Drive and create a folder named 'Blender_GC'. Then download and upload 'cloud_render_v5.ipynb' in the same folder.
 
-2. K80 does not support Optix rendering, so check the GPU connected by running the first line of code. You will have to choose the rendering device (CUDA or OPTIX) later so it's better to decide by having a look at the GPU name.
+2) Open the same file from the Drive by double-clicking it which will lead to Google Colaboratory. Go to Edit > Notebook Settings then change Hardware accelerator to GPU and save it with the "omit code cell output when saving this notebook" checked. 
 
-3. Run the second, the main part of the program. Enter the Authorization code as directed.
+3) Run the first cell to get GPU info. If the GPU is a Tesla K80, you will not be able to use OptiX while rendering so make sure you choose CUDA when asked later.
 
-4. Next, u need to input the blender version, as shown with an example.
+4) Now run the second cell. First, allow Google Colab to connect to Google Drive. Then select your Google Account and allow it to access files from your Drive.
 
-5. Now, you need to input whether you want to provide the Blender location or want the Cloud machine to download the file itself, input 'download' for this or 'install', and then provide the path of the downloaded file on your drive. Go to https://download.blender.org/release/ and click on the version you want to render on. Find the linux64.tar.xz type of that particular version as it won't support any other type. 
-* If you chose the 'download' option, copy both the link of that page and the version + type, then paste it as an input for the directory. It should look like this - https://download.blender.org/release/Blender2.92/blender-2.92.0-linux64.tar.xz 
-* If you chose the 'install' option, download the particular version and upload it to your Google Drive. Now, locate that file from the drive. This should look like this - /gdrive/MyDrive/test_render/blender-2.92.0-linux64.tar.xz  | Here, /gdrive/MyDrive/  will be the same for all as its a common path to get into a Google Drive. 'test_render/' is a folder created, and blender-2.92.0-linux64.tar.xz is the name of the file. 
+5) Next, you need to select the Blender installation type. All the selections can be made by entering Item No. Enter '1' if you want it to download and install blender all by itself. Enter '2' if you upload Blender manually. This subtracts the downloading duration every time you run the program. Lastly, enter '3' if you are re-running the program without having it disconnected from the servers and have downloaded and installed Blender already.
 
-6. It will now download some files that may be required for the whole render process.
+6) Here are all the detailed steps for the installation type selection:-
 
-7. Upload your .blend file to the same folder in your Google Drive.
+**A) If '1' is selected, the next table shows all the available Blender versions to download. Again, a particular Blender version can be selected by just entering Item No.
+After that, Blender will download and then install it on Google Colab servers.
 
-8. Now, locate the .blend file location in your Google Drive which you want to render. It is recommended to add it in the same folder created for the previous uploads for ease of accessibility. It should look like this - /gdrive/MyDrive/test_render/main.blend  | Where, /gdrive/MyDrive/ are common for all, test_render is the name of the folder, and main.blend is the name of the blender file which is used as an example to be rendered.
+**B) If '2' is selected, the next table shows all the links of Blender versions to download. One can download any of the versions listed by clicking on the link which will be saved in your downloads. Once it's downloaded, upload the file to the 'Blender_GC' folder created earlier.
+Now you can select the version you downloaded and uploaded by the same method from the table (No other Blender versions will be supported other than the ones listed). By this, one skips the downloading part of Blender every time the code is restarted. The application will now be installed on GC's servers.
 
-9. Now, input the rendering device i.e., "optix" or "cuda", according to GPU availability.
+**C) If '3' is selected, the download and installation part of the code will be skipped.
 
-10. Enter the type of render, 's' if u want a specific frame or 'a' if u want an animation/ range of frames to be rendered.
+7) Next, you can upload the .blend file that you wish to render in that same folder. When the file is done uploading, enter the Blend file name including the file extension. (Example - Test.blend, test.blend1)
 
-11. If 'a', u will have to input the starting and the ending frame number. If 's', u will just need to enter the single frame number.
+8) Now you can select whether you want to use the Cycles Engine or Eevee and if Cycles, use CUDA or OptiX. Remember you cannot select OptiX if the GPU allotted is a Tesla K80.
 
-12. 'CUDA' type needs a python file to switch from the default settings, so u will have to locate the provided GPU.py file on the same folder if possible. It should look like this - /gdrive/MyDrive/test_render/GPU.py  | *This file isn't needed for the Optix render device.
-
-13) The file will now start to render, it will show current estimates,  etc. similar to the actual rendering scene in Blender.
-
-14) A File will be automatically created named "Output" in the same directory of your Google Drive. All rendered files will be visible if it's completed.
-
+9) Lastly, select if you wish to render single or multiple frames. If Single frame is selected, you will have to enter the frame number from the blend file. If Animation is selected, one needs to enter the start frame number and then the end frame number. If all the fields entered are valid/correct, the render process will start and the render stats will be shown in the output section. You can find all the rendered frames on Google Drive > Blender_GC > Output. 
 
 
 ## More you Know
