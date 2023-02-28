@@ -16,12 +16,9 @@
 5) Next, you need to select the Blender installation type. All the selections can be made by entering Item No. Enter '1' if you want it to download and install blender all by itself. Enter '2' if you upload Blender manually. This subtracts the downloading duration every time you run the program. Lastly, enter '3' if you are re-running the program without having it disconnected from the servers and have downloaded and installed Blender already.
 
 6) Here are all the detailed steps for the installation type selection:-
-
 * A) If '1' is selected, the next table shows all the available Blender versions to download. Again, a particular Blender version can be selected by just entering Item No. After that, Blender will download and then install it on Google Colab servers.
-
 * B) If '2' is selected, the next table shows all the links of Blender versions to download. One can download any of the versions listed by clicking on the link which will be saved in your downloads. Once it's downloaded, upload the file to the 'Blender_GC' folder created earlier.
 Now you can select the version you downloaded and uploaded by the same method from the table (No other Blender versions will be supported other than the ones listed). By this, one skips the downloading part of Blender every time the code is restarted. The application will now be installed on GC's servers.
-
 * C) If '3' is selected, the download and installation part of the code will be skipped.
 
 7) Next, you can upload the .blend file that you wish to render in that same folder. When the file is done uploading, enter the Blend file name including the file extension. (Example - Test.blend, test.blend1)
