@@ -42,9 +42,7 @@
 
 1. Free version of Google Colab will allow the user to use GPUs for 12hrs in a week per Google Account. For detailed info, check out  https://colab.research.google.com/signup
 
-2. This only supports Cycles render as of now.
-
-3. It's better to provide the Blender Application in your drive as this will subtract the time to download it whenever you run the code in the future.
+2. It's better to provide the Blender Application in your drive as this will subtract the time to download it whenever you run the code in the future.
 
 GLHF ;)
 
